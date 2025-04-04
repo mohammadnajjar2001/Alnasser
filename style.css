@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    text-align: center;
+    background: linear-gradient(to bottom right, #fdfcfb, #e2d1c3);
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.store-name {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    background-color: #f1f1f1;
+    padding: 12px;
+    margin-top: 15px;
+    border: 1px dashed #999;
+    border-radius: 10px;
+    word-break: break-word;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+/* تصميم خاص للشاشات الصغيرة */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .store-name {
+        font-size: 20px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 15px;
+    }
+}
+
+/* تحسين على الشاشات الأكبر */
+@media (min-width: 768px) {
+    .store-name {
+        font-size: 28px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}

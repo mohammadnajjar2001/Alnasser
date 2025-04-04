@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>شحن رصيد - النصر</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <marquee behavior="" direction=""><h1 class="store-name">مركز النصر للشحن</h1></marquee>
+        <h2>توليد كود شحن</h2>
+
+        <input type="text" id="number" placeholder="رقم الهاتف">
+        <input type="number" id="balance" placeholder="الرصيد">
+        <select id="company">
+            <option value="mtn">MTN</option>
+            <option value="syriatel">Syriatel</option>
+        </select>
+
+        <button onclick="generateCode()">توليد الكود</button>
+
+        <div id="resultContainer" style="display:none;">
+            <p id="result"></p>
+            <button onclick="copyCode()">نسخ الكود</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
